@@ -2,19 +2,36 @@
     --very-dark-gray: hsl(0, 0%, 17%);
     --dark-gray: hsl(0, 0%, 59%);
 }
-
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Rubik', sans-serif;
     background-image: url(images/pattern-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+p:only-of-type{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+#input{
+    border: none;
+    border-radius: 11px 0 0 11px;
+    padding: 1em 2em;
+}
 .card{
+    max-width: 326px;
+    padding: 2em;
     background: white;
+    border-radius: 9px;
+    text-align: center;
 }
 .card-title{
     text-transform: uppercase;
     color: var(--dark-gray);
     font-weight: 700;
-    font-size: 12px;
+    font-size: 11px;
 }
