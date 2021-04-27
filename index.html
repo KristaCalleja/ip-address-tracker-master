@@ -12,17 +12,25 @@
 </head>
 <body>
   <p>IP Address Tracker</p>
-  <form id="form" class="input-group__input" action="/" method="GET">  
-    <input id="input" type="text" placeholder="Search for any IP address or domain">
-    <button type="submit" class="btn">></button>
+  <form class="form">  
+    <input type="text" id="search-input" placeholder="Search for any IP address or domain">
+    <button type="submit">></button>
   </form>
-  <div class="card">
-    <div class="card-title">IP Address</div> 
-    <div class="card-title">Location</div> 
-    <div class="card-title">Timezone</div>
-    <div class="card-title">ISP</div> 
-  </div>
-  
+  <ul id="results" class="listed-results">
+    <div class="card-title">IP Address
+      <li class="search-input-show"></li>
+    </div>
+    <div class="card-title">Location
+      <li class="location-show"></li>
+    </div> 
+    <div class="card-title">Timezone
+      <li class="timezone-show"></li>
+    </div>
+    <div class="card-title">ISP
+      <li class="isp-show"></li>
+    </div>
+  </ul>
+    
   <script src="main.js"></script>
 </body>
 </html>

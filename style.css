@@ -17,12 +17,12 @@ p:only-of-type{
     font-size: 24px;
     font-weight: 500;
 }
-#input{
+#search-input{
     border: none;
     border-radius: 11px 0 0 11px;
     padding: 1em 2em;
 }
-.card{
+.listed-results{
     max-width: 326px;
     padding: 2em;
     background: white;
