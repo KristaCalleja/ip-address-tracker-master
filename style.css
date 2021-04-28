@@ -42,6 +42,8 @@ button:hover{
     background: var(--very-dark-gray);
 }
 .listed-results{
+    width: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -51,13 +53,13 @@ button:hover{
     text-align: center;
 }
 .card-title{
-    border: 1px red solid;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: var(--dark-gray);
     font-weight: 700;
     font-size: 9px;
     letter-spacing: .2em;
+    margin-bottom: .5em;
 }
 li, input[type=text]{
     list-style: none;
@@ -67,6 +69,7 @@ li, input[type=text]{
     font-weight: 400;
     font-size: 16px;
 }
+
 @media (min-width: 900px){
     .search-input{
         width: 500px;
@@ -74,5 +77,9 @@ li, input[type=text]{
     .listed-results{
         width: 900px;
         flex-direction: row;
+        height: auto;
+    }
+    .card-title{
+        text-align: left;
     }
 }
