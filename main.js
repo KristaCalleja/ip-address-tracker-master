@@ -8,7 +8,7 @@ const generatedISP = document.querySelector('.isp-show');
 
 // Iterate over all elements
 generatedResults.forEach((result)=>{
-    result.innerText = "abc"
+    result.innerText = "192.212.174.101"
 });
 
 

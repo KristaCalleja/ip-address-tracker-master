@@ -14,24 +14,65 @@ body{
 }
 p:only-of-type{
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
 }
-#search-input{
+.form{
+    display: flex;
+}
+.search-input{
     border: none;
     border-radius: 11px 0 0 11px;
     padding: 1em 2em;
+    width: 270px;
+    cursor: pointer;
+}
+.search-input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+    width: 60px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0 11px 11px 0;   
+}
+button:hover{
+    background: var(--very-dark-gray);
 }
 .listed-results{
-    max-width: 326px;
-    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
     background: white;
-    border-radius: 9px;
+    border-radius: 11px;
     text-align: center;
 }
 .card-title{
+    border: 1px red solid;
+    text-align: left;
     text-transform: uppercase;
     color: var(--dark-gray);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 9px;
+    letter-spacing: .2em;
+}
+li, input[type=text]{
+    list-style: none;
+    color: black;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+@media (min-width: 900px){
+    .search-input{
+        width: 500px;
+    }
+    .listed-results{
+        width: 900px;
+        flex-direction: row;
+    }
 }
