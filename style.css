@@ -5,6 +5,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    margin: 0;
 }
 section{
     display: flex;
@@ -73,7 +74,7 @@ li, input[type=text]{
     font-size: 16px;
 }
 #map{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     height: 90vh;
     width: 100vw;
 }
