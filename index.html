@@ -8,31 +8,42 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 </head>
 <body>
-  <p>IP Address Tracker</p>
-  <form class="form">  
-    <input type="text" class="search-input" id="search-input" placeholder="Search for any IP address or domain">
-    <button id="btn" type="submit"><img src="images/icon-arrow.svg" alt=""></button>
-  </form>
-  <ul id="results" class="listed-results">
-    <div>
-      <div class="card-title">IP Address</div>
-        <li class="search-input-show"></li>
-      </div>
-    <div>
-      <div class="card-title">Location</div>
-        <li class="location-show"></li>
-      </div>
-    <div> 
-      <div class="card-title">Timezone</div>
-        <li class="timezone-show"></li>
-      </div>
-    <div>
-      <div class="card-title">ISP</div>
-        <li class="isp-show"></li>
-      </div>  
-  </ul> 
+  <section>
+    <p>IP Address Tracker</p>
+    <form class="form">  
+      <input type="text" class="search-input" id="search-input" placeholder="Search for any IP address or domain">
+      <button id="btn" type="submit"><img src="images/icon-arrow.svg" alt=""></button>
+    </form>
+    <ul id="results" class="listed-results">
+      <div>
+        <div class="card-title">IP Address</div>
+          <li class="search-input-show"></li>
+        </div>
+      <div>
+        <div class="card-title">Location</div>
+          <li class="location-show"></li>
+        </div>
+      <div> 
+        <div class="card-title">Timezone</div>
+          <li class="timezone-show"></li>
+        </div>
+      <div>
+        <div class="card-title">ISP</div>
+          <li class="isp-show"></li>
+        </div>  
+    </ul> 
+  </section>
+  <div class="mapbox">
+    <div id="map"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   <script src="main.js"></script>
 </body>
 </html>

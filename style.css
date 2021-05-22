@@ -3,11 +3,14 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 body{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
     background-image: url(images/pattern-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,7 +72,11 @@ li, input[type=text]{
     font-weight: 400;
     font-size: 16px;
 }
-
+#map{
+    border: 1px red solid;
+    height: 90vh;
+    width: 100vw;
+}
 @media (min-width: 900px){
     .search-input{
         width: 500px;
