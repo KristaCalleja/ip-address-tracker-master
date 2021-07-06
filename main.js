@@ -27,7 +27,7 @@ const fetchIpAddress = (ip) => {
         const ipAddress = data.ip;
         const ip = `${ipAddress}`;
         generatedIpAddress.insertAdjacentHTML("beforeend", ip);
-        // For second fieldcolor
+        // For second field
         const country = data.location.country;
         const region = data.location.region;
         const city = data.location.city;

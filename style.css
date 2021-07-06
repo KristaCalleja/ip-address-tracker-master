@@ -78,6 +78,9 @@ li, input[type=text]{
     height: 90vh;
     width: 100vw;
 }
+.attribution{
+    text-align: center;
+}
 @media (min-width: 900px){
     .search-input{
         width: 500px;
