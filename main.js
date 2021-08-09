@@ -1,5 +1,4 @@
-const apiKey = ipGeolocationApiKey;
-const accessToken = leafletAccessToken;
+const apiKey = "at_SsKGF3XZ8YMdYdvtD3t0wewKOV6LQ";
 // Select the inputted ip address
 const searchInput = document.querySelector(".search-input");
 // Select the ul tag where results will be returned
@@ -64,7 +63,7 @@ const mapRender = (coordinates) => {
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: accessToken,
+        accessToken: "pk.eyJ1Ijoia3Jpc3RhY2FsbGVqYSIsImEiOiJjazJxbmF3bm0wZ3llM2Nvenh2YnA3NWg2In0.XkkUnhzEcLYoXp7Lh3kR_Q",
     }).addTo(map);
 }
 
