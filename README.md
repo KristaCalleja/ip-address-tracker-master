@@ -12,7 +12,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -58,11 +57,11 @@ const fetchIpAddress = (ip) => {
 
 Once I had finished the project I decided to add a further challenge to try to hide the api and access tokens from the main JS file. At first I decided to do this by moving them to a config.js file which I would then included in my .gitignore file. However it did not work, so I instead looked through using .env packages to create environmental variables. This would have been the best solution I found, however it would have required changing the app to Node.js and using a module bundler like webpack to load it. I will keep that for a future project.
 
-Reference reading:
+### Useful resources
 
 - Using dotenv package to create environment variables - [Medium article](https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f)
 
 ## Author
 
 - Website - [Krista Calleja](https://kristacalleja.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/KristaCalleja)
+- Frontend Mentor - [My Frontend Mentor profile](https://www.frontendmentor.io/profile/KristaCalleja)
